@@ -14,8 +14,8 @@ app.post('/tareas', (req, res) => {
     res.status(201).json(nuevaTarea);
 });
 
-app.get('/tareas', (req, res) => {
-    res.json(tareas);
+app.get('/', (req, res) => {
+    res.send('Bienvenido a la API de Tareas');
 });
 
 app.get('/tareas/:id', (req, res) => {
